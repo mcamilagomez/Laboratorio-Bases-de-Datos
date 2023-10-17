@@ -1,0 +1,33 @@
+.blue-bannerrrr {
+    background-color: rgb(19, 11, 110);
+    height: 1.5cm;
+    width: 500%;
+    position: relative;
+    top: 0;
+    z-index: 1;
+}
+
+.blue-banner {
+    background-color: rgba(43, 23, 113, 0.808);
+    height: 17cm;
+    width: 500%;
+    position: relative;
+    top: 0;
+    z-index: 1;
+}
+
+.blue-banner2 {
+    background-color: rgb(255, 255, 255);
+    height: 20cm;
+    width: 500%;
+    position: relative;
+    top: 0;
+    z-index: 1;
+}
+
+body {
+    background-image: url('/assets/fondo.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
