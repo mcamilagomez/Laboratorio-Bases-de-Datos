@@ -4,7 +4,7 @@
 - Roberto Carlos Gil García
 - María Camila Gómez Blanquicett
 
-## Link del Datase utilizado:
+## Link del Dataset utilizado:
 https://www.kaggle.com/datasets/patriciabrezeanu/movielens-full-25-million-recommendation-data
 
 ## Proceso de instalación de Base De Datos
