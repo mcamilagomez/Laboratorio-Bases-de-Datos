@@ -1,5 +1,9 @@
 # Laboratorio-Bases-de-Datos
 
+## Integrantes:
+- Roberto Carlos Gil García
+- María Camila Gómez Blanquicett
+
 ## Link del Datase utilizado:
 https://www.kaggle.com/datasets/patriciabrezeanu/movielens-full-25-million-recommendation-data
 

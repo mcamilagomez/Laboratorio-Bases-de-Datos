@@ -2,7 +2,6 @@
 import pypyodbc as odbc
 import dash 
 from dash import dcc, html  # Importamos dcc y html desde dash
-from dash.dependencies import Input, Output
 import pandas as pd
 import plotly.express as px
 import warnings
@@ -16,16 +15,20 @@ app = dash.Dash(__name__, external_stylesheets=['/assets/estilo.css'])
 #                              AQUÍ SE CONECTA EL SQL CON PYTHON
 
 DRIVER_NAME = 'SQL SERVER'
+# IMPORTANTE: Cambiar el nombre del servidor al de la máquina local
+# Correr comando select @@SERVERNAME en sql server y copiar el resultado
 SERVER_NAME = 'LAPTOP-1LCPBRUM'
 DATABASE_NAME = 'Movies'
 
+#IMPORTANTE: cambiar uid y pwd al del usuario y contraseña del equipo
+#Si el usuario actual no tiene contraseña simplemente no se pone
 connection_string = f"""
     DRIVER={{{DRIVER_NAME}}};
     SERVER={SERVER_NAME};
     DATABASE={DATABASE_NAME};
     Trusted_Connection=yes;
-    uid=roberto gil garcia;
-    pwd=3012;
+    uid=<user>;
+    pwd=<password>;
     """
 
 odbc_connection = odbc.connect(connection_string)
@@ -179,6 +182,6 @@ app.layout = html.Div(
 
 
 # Ejecutar la aplicación
-app.run_server(debug=True)
-
-odbc_connection.close()
+if __name__ == '__main__':
+    app.run_server(debug=True)
+    odbc_connection.close()
